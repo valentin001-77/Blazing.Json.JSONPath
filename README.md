@@ -596,6 +596,23 @@ Also, if you find this library useful and you're feeling really generous, please
 
 ## History
 
+### V1.0.1 - 11 January, 2026
+
+**RFC 9535 Compliance Fix**
+
+- **Parser Enhancement**:
+  - Fixed RFC 9535 Section 2.3.5.1 compliance
+  - LogicalType functions (`match()`, `search()`) can now be used as standalone test expressions in filter selectors
+  - Added `LogicalTestExpression` node type for proper AST representation
+  - Updated `ParseComparisonOrExistence()` to recognize LogicalType functions without requiring comparison operators
+  - Updated `FilterEvaluator` to handle `LogicalTestExpression` nodes correctly
+
+- **Examples**:
+  - `$[?match(@.email, '.*@example\.com$')]` - Filter by regex match (now works correctly)
+  - `$[?search(@.name, 'Admin')]` - Filter by substring search (now works correctly)
+  - `$[?!match(@.code, '^TEMP-.*')]` - Logical NOT with match function
+  - `$[?@.price < 100 && search(@.name, 'Chair')]` - Combined with other expressions
+
 ### V1.0.0 - 11 January, 2026
 
 **Initial Release - 100% RFC 9535 Certified**
