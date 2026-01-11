@@ -1,4 +1,4 @@
-# Blazing.Json.JSONPath
+﻿# Blazing.Json.JSONPath
 
 [![NuGet Version](https://img.shields.io/nuget/v/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![NuGet Downloads](https://img.shields.io/nuget/dt/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![.NET 10+](https://img.shields.io/badge/.NET-10%2B-512BD4)](https://dotnet.microsoft.com/download) [![RFC 9535](https://img.shields.io/badge/RFC%209535-100%25%20Compliant-brightgreen)](https://www.rfc-editor.org/rfc/rfc9535.html)
 
@@ -27,7 +27,7 @@
 - [How It Works](#how-it-works)
 - [Performance Characteristics](#performance-characteristics)
 - [Samples](#samples)
-- [Give a ?](#give-a-)
+- [Give a ⭐](#give-a-)
 - [Support](#support)
 - [History](#history)
 
@@ -41,17 +41,17 @@ Whether you're querying API responses, processing configuration files, or analyz
 
 ## Key Features
 
-- ? **100% RFC 9535 Compliant**: Certified through 324 comprehensive unit tests
-- ? **Standards-Based**: Official RFC 9535 JSONPath specification support
-- ? **All Selector Types**: Name, wildcard, index, slice, and filter selectors
-- ? **Recursive Descent**: Navigate nested structures with `..` operator
-- ? **Filter Expressions**: Complex filtering with comparison and logical operators
-- ? **Built-in Functions**: All 5 RFC functions (length, count, match, search, value)
-- ? **Type System**: Full RFC type system (ValueType, NodesType, LogicalType)
-- ? **Unicode Support**: Complete Unicode handling including surrogate pairs
-- ? **.NET 10 Optimized**: Built for the latest .NET with modern C# features
-- ? **High Performance**: Zero-allocation design with efficient buffer management
-- ? **Production Ready**: Zero compiler warnings, comprehensive documentation
+- ✅ **100% RFC 9535 Compliant**: Certified through 324 comprehensive unit tests
+- ✅ **Standards-Based**: Official RFC 9535 JSONPath specification support
+- ✅ **All Selector Types**: Name, wildcard, index, slice, and filter selectors
+- ✅ **Recursive Descent**: Navigate nested structures with `..` operator
+- ✅ **Filter Expressions**: Complex filtering with comparison and logical operators
+- ✅ **Built-in Functions**: All 5 RFC functions (length, count, match, search, value)
+- ✅ **Type System**: Full RFC type system (ValueType, NodesType, LogicalType)
+- ✅ **Unicode Support**: Complete Unicode handling including surrogate pairs
+- ✅ **.NET 10 Optimized**: Built for the latest .NET with modern C# features
+- ✅ **High Performance**: Zero-allocation design with efficient buffer management
+- ✅ **Production Ready**: Zero compiler warnings, comprehensive documentation
 
 ## Why Choose Blazing.Json.JSONPath?
 
@@ -62,10 +62,10 @@ Whether you're querying API responses, processing configuration files, or analyz
 ```
 Test Summary:
   Total:    324 tests
-  Passed:   324 tests ?
-  Failed:   0 tests ?
+  Passed:   324 tests ✅
+  Failed:   0 tests ✅
   Skipped:  0 tests
-  Success:  100% ?
+  Success:  100% ✅
 ```
 
 This compliance ensures:
@@ -80,12 +80,12 @@ The [RFC 9535 specification](https://www.rfc-editor.org/rfc/rfc9535.html) define
 
 | RFC Component | Compliance | Tests |
 |--------------|------------|-------|
-| Lexer (2.1) | ? 100% | 100+ |
-| Parser (2.2-2.3) | ? 100% | 50+ |
-| Evaluator (2.3-2.4) | ? 100% | 120+ |
-| Filter Expressions (2.3.5) | ? 100% | 80+ |
-| Functions (2.4) | ? 100% | 35+ |
-| **TOTAL** | ? **100%** | **324** |
+| Lexer (2.1) | ✅ 100% | 100+ |
+| Parser (2.2-2.3) | ✅ 100% | 50+ |
+| Evaluator (2.3-2.4) | ✅ 100% | 120+ |
+| Filter Expressions (2.3.5) | ✅ 100% | 80+ |
+| Functions (2.4) | ✅ 100% | 35+ |
+| **TOTAL** | ✅ **100%** | **324** |
 
 For detailed compliance verification, see:
 - [RFC 9535 Compliance Summary](docs/RFC9535_COMPLIANCE_SUMMARY.md)
@@ -94,7 +94,7 @@ For detailed compliance verification, see:
 
 ### When to Use This Library
 
-? **Use Blazing.Json.JSONPath When:**
+✅ **Use Blazing.Json.JSONPath When:**
 - You need **standards-compliant** JSONPath queries
 - Working with **complex JSON structures** (nested objects/arrays)
 - Filtering JSON data with **sophisticated expressions**
@@ -118,19 +118,19 @@ Blazing.Json.JSONPath is **certified 100% compliant** with [RFC 9535 - JSONPath:
 
 All RFC 9535 features are fully implemented and tested:
 
-- ? **Lexical Grammar** - All token types (100+ tests)
-- ? **Syntax Parsing** - Full ABNF compliance (50+ tests)
-- ? **Selectors** - All 5 selector types (80+ tests)
+- ✅ **Lexical Grammar** - All token types (100+ tests)
+- ✅ **Syntax Parsing** - Full ABNF compliance (50+ tests)
+- ✅ **Selectors** - All 5 selector types (80+ tests)
   - Name, Wildcard, Index, Slice, Filter
-- ? **Segments** - Child and Descendant (40+ tests)
-- ? **Filter Expressions** - Complete (80+ tests)
+- ✅ **Segments** - Child and Descendant (40+ tests)
+- ✅ **Filter Expressions** - Complete (80+ tests)
   - Logical operators (AND, OR, NOT)
   - Comparison operators (==, !=, <, <=, >, >=)
   - Existence tests
   - RFC Table 11 semantics
-- ? **Functions** - All 5 built-in functions (35+ tests)
+- ✅ **Functions** - All 5 built-in functions (35+ tests)
   - length(), count(), match(), search(), value()
-- ? **Type System** - Full compliance
+- ✅ **Type System** - Full compliance
   - ValueType, NodesType, LogicalType
   - Type conversions per RFC 2.4.2
 
@@ -138,10 +138,10 @@ All RFC 9535 features are fully implemented and tested:
 
 Perfect implementation of all RFC semantics:
 
-- ? **Comparison Engine** - RFC Table 11 exact match
-- ? **Array Slicing** - RFC 2.3.4.2.2 normalization
-- ? **Filter Truthiness** - RFC 2.3.5.3 compliance
-- ? **Unicode Support** - Complete surrogate pair handling
+- ✅ **Comparison Engine** - RFC Table 11 exact match
+- ✅ **Array Slicing** - RFC 2.3.4.2.2 normalization
+- ✅ **Filter Truthiness** - RFC 2.3.5.3 compliance
+- ✅ **Unicode Support** - Complete surrogate pair handling
 
 For complete compliance details, see [RFC9535_COMPLIANCE_VERIFICATION.md](docs/RFC9535_COMPLIANCE_VERIFICATION.md).
 
@@ -192,6 +192,7 @@ var json = JsonDocument.Parse("""
     }
 }
 """);
+
 
 // Parse JSONPath query
 var query = JsonPathParser.Parse("$.store.book[?@.price < 10]");
@@ -522,26 +523,26 @@ var query = "$.store.book[?@.price < 10]";
 
 ### Zero-Allocation Design
 
-- ? `ArrayPool<T>` for buffer management
-- ? Span-based string operations
-- ? Value types for tokens and nodes
-- ? Lazy evaluation with `yield return`
+- ✅ `ArrayPool<T>` for buffer management
+- ✅ Span-based string operations
+- ✅ Value types for tokens and nodes
+- ✅ Lazy evaluation with `yield return`
 
 ### Optimization Features
 
-- ? Complexity analyzer for fast-path routing
-- ? Source-generated regex for lexer
-- ? Efficient buffer growth strategies
-- ? Short-circuit evaluation in logical operators
+- ✅ Complexity analyzer for fast-path routing
+- ✅ Source-generated regex for lexer
+- ✅ Efficient buffer growth strategies
+- ✅ Short-circuit evaluation in logical operators
 
 ### Typical Performance
 
 | Operation | Time | Allocations |
 |-----------|------|-------------|
-| Parse simple query | ~1-5 ?s | Minimal |
-| Parse complex filter | ~10-20 ?s | Low |
-| Evaluate small JSON | ~5-10 ?s | Pooled buffers |
-| Evaluate 1MB JSON | ~100-500 ?s | Constant memory |
+| Parse simple query | ~1-5 µs | Minimal |
+| Parse complex filter | ~10-20 µs | Low |
+| Evaluate small JSON | ~5-10 µs | Pooled buffers |
+| Evaluate 1MB JSON | ~100-500 µs | Constant memory |
 
 *Note: Performance varies based on query complexity and JSON structure. Run benchmarks in your specific scenarios.*
 
@@ -577,11 +578,11 @@ The samples include:
 - Function usage patterns
 - Real-world query scenarios
 
-## Give a ?
+## Give a ⭐
 
 If you like or are using this project to learn or start your solution, please give it a star. Thanks!
 
-Also, if you find this library useful and you're feeling really generous, please consider [buying me a coffee ?](https://bmc.link/gragra33).
+Also, if you find this library useful and you're feeling really generous, please consider [buying me a coffee ☕](https://bmc.link/gragra33).
 
 ## Support
 
@@ -684,4 +685,4 @@ Also, if you find this library useful and you're feeling really generous, please
 
 **License**: MIT License - see [LICENSE](LICENSE) file for details
 
-**Copyright** � 2026 Graeme Grant. All rights reserved.
+**Copyright** © 2026 Graeme Grant. All rights reserved.
