@@ -597,7 +597,7 @@ Also, if you find this library useful and you're feeling really generous, please
 
 ## History
 
-### V1.1.0 - 15 January, 2026
+### V1.1.0 - 11 January, 2026
 
 **Enhanced Testing and Utilities**
 
