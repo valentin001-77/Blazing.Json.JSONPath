@@ -1,4 +1,6 @@
-# Blazing.Json.JSONPath [![NuGet Version](https://img.shields.io/nuget/v/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![NuGet Downloads](https://img.shields.io/nuget/dt/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![.NET 10+](https://img.shields.io/badge/.NET-10%2B-512BD4)](https://dotnet.microsoft.com/download) [![RFC 9535](https://img.shields.io/badge/RFC%209535-100%25%20Compliant-brightgreen)](https://www.rfc-editor.org/rfc/rfc9535.html)
+# Blazing.Json.JSONPath
+
+[![NuGet Version](https://img.shields.io/nuget/v/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![NuGet Downloads](https://img.shields.io/nuget/dt/Blazing.Json.JSONPath.svg)](https://www.nuget.org/packages/Blazing.Json.JSONPath) [![.NET 10+](https://img.shields.io/badge/.NET-10%2B-512BD4)](https://dotnet.microsoft.com/download) [![RFC 9535](https://img.shields.io/badge/RFC%209535-100%25%20Compliant-brightgreen)](https://www.rfc-editor.org/rfc/rfc9535.html)
 
 ## Table of Contents
 - [Overview](#overview)
