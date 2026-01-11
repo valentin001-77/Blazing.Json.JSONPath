@@ -1,8 +1,10 @@
 using System.Collections.Immutable;
 using Blazing.Json.JSONPath.Exceptions;
+using Blazing.Json.JSONPath.Functions;
 using Blazing.Json.JSONPath.Lexer;
 using Blazing.Json.JSONPath.Parser.Nodes;
 using Blazing.Json.JSONPath.Utilities;
+using ParserFunctionArgument = Blazing.Json.JSONPath.Parser.Nodes.FunctionArgument;
 
 namespace Blazing.Json.JSONPath.Parser;
 
@@ -358,6 +360,7 @@ public sealed class JsonPathParser
 
     /// <summary>
     /// Parses a comparison expression or existence test or parenthesized expression.
+    /// RFC 9535 Section 2.3.5.1: test-expr can be a function-expr returning LogicalType or NodesType.
     /// </summary>
     private static FilterExpressionNode ParseComparisonOrExistence(ParserContext context)
     {
@@ -377,6 +380,22 @@ public sealed class JsonPathParser
         {
             var right = ParseComparable(context);
             return new ComparisonExpression(left, op, right);
+        }
+
+        // RFC 9535 Section 2.3.5.1: Functions returning LogicalType or NodesType can be test expressions
+        // If it's a function call, check if it returns LogicalType or NodesType
+        if (left is FunctionCallNode funcCall)
+        {
+            var function = FunctionRegistry.Default.GetFunction(funcCall.Function.FunctionName);
+            
+            // LogicalType and NodesType functions can be used as test expressions without comparison
+            if (function.ResultType == FunctionType.LogicalType || function.ResultType == FunctionType.NodesType)
+            {
+                return funcCall.Function;
+            }
+            
+            // ValueType functions require a comparison operator
+            throw context.Error($"Function '{funcCall.Function.FunctionName}' returns ValueType and requires a comparison operator");
         }
 
         // If it's a query and no comparison operator, it's an existence test
@@ -482,7 +501,7 @@ public sealed class JsonPathParser
 
         context.Consume(TokenType.LeftParen, "Expected '(' after function name");
 
-        var arguments = new List<FunctionArgument>();
+        var arguments = new List<ParserFunctionArgument>();
 
         // Parse arguments
         if (!context.Check(TokenType.RightParen))
@@ -503,7 +522,7 @@ public sealed class JsonPathParser
     /// <summary>
     /// Parses a function argument.
     /// </summary>
-    private static FunctionArgument ParseFunctionArgument(ParserContext context)
+    private static ParserFunctionArgument ParseFunctionArgument(ParserContext context)
     {
         // Query argument
         if (context.Check(TokenType.CurrentIdentifier, TokenType.RootIdentifier))

@@ -175,14 +175,62 @@ public sealed class FilterEvaluator
         // Evaluate arguments
         var evaluatedArgs = EvaluateArguments(arguments, currentNode, rootNode);
 
-        // Validate argument types
+        // Validate argument types and convert if needed
         FunctionRegistry.ValidateArguments(func, evaluatedArgs);
+        
+        // Convert arguments to match expected parameter types
+        var convertedArgs = ConvertArgumentsToParameterTypes(func, evaluatedArgs);
 
         // Create evaluation context
         var context = new EvaluationContext(currentNode, rootNode);
 
         // Execute the function
-        return func.Execute(evaluatedArgs, context);
+        return func.Execute(convertedArgs, context);
+    }
+
+    /// <summary>
+    /// Converts function arguments to match expected parameter types.
+    /// Implements RFC 9535 Section 2.4.2 type conversions.
+    /// </summary>
+    private IReadOnlyList<Functions.FunctionArgument> ConvertArgumentsToParameterTypes(
+        IFunctionExtension function,
+        IReadOnlyList<Functions.FunctionArgument> arguments)
+    {
+        var convertedArgs = new List<Functions.FunctionArgument>(arguments.Count);
+
+        for (int i = 0; i < arguments.Count; i++)
+        {
+            var expectedType = function.ParameterTypes[i];
+            var arg = arguments[i];
+
+            // Convert NodesType to ValueType if needed (RFC 2.4.2)
+            if (expectedType == FunctionType.ValueType && arg is Functions.NodesArgument nodesArg)
+            {
+                // value() semantics: single node ? value, otherwise Nothing
+                if (nodesArg.Nodes.Count == 1)
+                {
+                    convertedArgs.Add(new Functions.ValueArgument(nodesArg.Nodes[0].Value));
+                }
+                else
+                {
+                    convertedArgs.Add(new Functions.ValueArgument(null));
+                }
+            }
+            // Convert NodesType to LogicalType if needed (RFC 2.4.2)
+            else if (expectedType == FunctionType.LogicalType && arg is Functions.NodesArgument nodesArgForLogical)
+            {
+                // LogicalType conversion: non-empty nodelist ? true, empty ? false
+                bool logicalValue = nodesArgForLogical.Nodes.Count > 0;
+                convertedArgs.Add(new Functions.LogicalArgument(logicalValue));
+            }
+            else
+            {
+                // No conversion needed
+                convertedArgs.Add(arg);
+            }
+        }
+
+        return convertedArgs;
     }
 
     /// <summary>
@@ -205,6 +253,8 @@ public sealed class FilterEvaluator
 
                 case QueryArgument query:
                     var nodelist = EvaluateQuery(query.Query, currentNode, rootNode);
+                    // Query arguments produce NodesType
+                    // The function's parameter type check will convert NodesType to ValueType if needed
                     evaluatedArgs.Add(new Functions.NodesArgument(nodelist));
                     break;
 
